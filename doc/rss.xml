@@ -1,45 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
-	>
-
-<channel>
-	<title>Node.js Blog</title>
-  <atom:link href="http://blog.nodejs.org<%= uri %>" rel="self" type="application/rss+xml" />
-  <link>http://blog.nodejs.org/</link>
-	<description>The Blog about Node.js</description>
-  <lastBuildDate><%= new Date().toUTCString() %></lastBuildDate>
-	<language>en</language>
-	<sy:updatePeriod>weekly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>http://nodejs.org/</generator>
-  <image>
-    <url>http://nodejs.org/images/logo-light.png</url>
-		<title>Node.js</title>
-    <link>http://blog.nodejs.org/</link>
-	</image>
-  <%
-  posts.forEach(function(post) {
-    %>
-    <item>
-      <title><%= post.title %></title>
-      <link>http://blog.nodejs.org<%= post.permalink %></link>
-      <pubDate><%= post.date.toUTCString() %></pubDate>
-      <dc:creator><%= post.author %></dc:creator>
-      <category><![CDATA[<%= post.category %>]]></category>
-
-      <guid isPermaLink="true">http://blog.nodejs.org<%= post.permalink %></guid>
-      <description><![CDATA[<%- post.content %>]]></description>
-      <content:encoded><![CDATA[<%- post.content %>]]></content:encoded>
-    </item>
-    <%
-  });
-  %>
-</channel>
-</rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[AP0 Status]]></title><description><![CDATA[Recent Incidents, Maintenance Windows and Incident Events]]></description><link>https://status.salesforce.com?locale=en</link><generator>RSS for Node</generator><lastBuildDate>Sat, 28 Dec 2019 22:17:06 GMT</lastBuildDate><atom:link href="https://status.salesforce.com/rss/AP0/en" rel="self" type="application/rss+xml"/><language><![CDATA[en]]></language><item><title><![CDATA[Incident #4910 Update]]></title><description><![CDATA[<div>
+  
+    <div>
+      The rollback of a software change that is affecting the dataflow processing in Wave Analytics across multiple production and sandbox instances continues, and is expected to be completed within the next 30 minutes. The Salesforce Technology team has been investigating an issue with the Einstein Analytics service that is causing some customers to experience error messages when attempting to run Edgemart-based data sets. The Technology team had determined that a rollback of the change implemented on December 10, 2019, is the best path to resolve the issue.
+    </div>
+  
+  
+</div>
+]]></description><link>https://status.salesforce.com/status/AP0/incidents/4910?locale=en</link><guid isPermaLink="false">&lt;![CDATA[2: Incident #4910 Update]]&gt;</guid><pubDate>Wed, 11 Dec 2019 19:29:27 GMT</pubDate></item><item><title><![CDATA[Incident #4910 Update]]></title><description><![CDATA[<div>
+  
+    <div>
+      Einstein Analytics - Feature Degradation
+A possible issue with the Einstein Analytics service that is affecting the dataflow processing in Wave Analytics across multiple production and sandbox instances. Some customers may experience error messages when attempting to run Edgemart-based data sets. Currently the Technology team are exploring all paths to resolution for impacted customers and are testing if a rollback will resolve the issue. We apologize for any inconvenience you have experienced as a result of this incident. We currently have no ETA but based on the efforts of the Technology team we expect to update you within 90 minutes.
+    </div>
+  
+  
+</div>
+]]></description><link>https://status.salesforce.com/status/AP0/incidents/4910?locale=en</link><guid isPermaLink="false">&lt;![CDATA[3: Incident #4910 Update]]&gt;</guid><pubDate>Wed, 11 Dec 2019 19:13:52 GMT</pubDate></item><item><title><![CDATA[Incident #4910 Update]]></title><description><![CDATA[<div>
+  
+    <div>
+      Einstein Analytics - Feature Degradation
+A possible issue with the Einstein Analytics service that is affecting the dataflow processing in Wave Analytics across multiple production and sandbox instances. Some customers may experience error messages when attempting to run Edgemart-based data sets. Currently the Technology team are exploring all paths to resolution for impacted customers and are considering if a rollback is a viable path to resolution
+    </div>
+  
+  
+</div>
+]]></description><link>https://status.salesforce.com/status/AP0/incidents/4910?locale=en</link><guid isPermaLink="false">&lt;![CDATA[4: Incident #4910 Update]]&gt;</guid><pubDate>Wed, 11 Dec 2019 19:13:35 GMT</pubDate></item><item><title><![CDATA[Incident #4910 Update]]></title><description><![CDATA[<div>
+  
+    <div>
+      Einstein Analytics - Feature Degradation.
+A possible issue with the Einstein Analytics service that is affecting the dataflow processing in Wave Analytics across multiple production and sandbox instances. Some customers may experience error messages when attempting to run Edgemart-based data sets. Currently the Technology team are exploring all paths to resolution for impacted customers
+    </div>
+  
+  
+</div>
+]]></description><link>https://status.salesforce.com/status/AP0/incidents/4910?locale=en</link><guid isPermaLink="false">&lt;![CDATA[5: Incident #4910 Update]]&gt;</guid><pubDate>Wed, 11 Dec 2019 19:12:27 GMT</pubDate></item><item><title><![CDATA[Incident #4910 Performance Degradation - Analytics: Resolved]]></title><description><![CDATA[<div>
+      <div>
+        Root Cause : The Root Cause Message (RCM) is now available to affected customers. You may request a copy from your account team or by opening a case with customer support.
+      </div>
+    
+  
+  
+</div>
+]]></description><link>https://status.salesforce.com/status/AP0/incidents/4910?locale=en</link><guid isPermaLink="false">&lt;![CDATA[0: Incident #4910 Performance Degradation - Analytics: Resolved]]&gt;</guid><pubDate>Wed, 11 Dec 2019 17:25:00 GMT</pubDate></item><item><title><![CDATA[Incident #4910 Performance Degradation - Analytics]]></title><description><![CDATA[<div>
+      <div>
+        Root Cause : The Root Cause Message (RCM) is now available to affected customers. You may request a copy from your account team or by opening a case with customer support.
+      </div>
+    
+  
+  
+</div>
+]]></description><link>https://status.salesforce.com/status/AP0/incidents/4910?locale=en</link><guid isPermaLink="false">&lt;![CDATA[1: Incident #4910 Performance Degradation - Analytics]]&gt;</guid><pubDate>Tue, 10 Dec 2019 01:27:00 GMT</pubDate></item></channel></rss>
